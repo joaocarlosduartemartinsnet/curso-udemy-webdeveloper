@@ -8,8 +8,10 @@ EX:
 //este e um exemplo de uma variavel constante.
 const a = 10;
 /*
-aqui, pode executar, e vera que o programa nao dara certo.
-isso porque ja definimos um valor constante para a letra "a".
+aqui, apos executar, você verá que 
+o programa não sera executado,
+isso acontece porque já definimos 
+um valor constante para a variavel "a".
 */
 a = a + 9 ;
 

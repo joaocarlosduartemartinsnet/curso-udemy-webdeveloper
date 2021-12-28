@@ -2,7 +2,10 @@
 Área da Circunfêrencia
  - FORMULA: a = pi * r^2;
 */
+
+
 //coloquei 'const' no PI, pois o valor de PI, não ira se alterar.
+
 //minha resposta.
 /*
 const PI = 3.14;

@@ -1,12 +1,13 @@
-/*troca de valores
+/*
+troca de valores
 a = 7;
 b = 94;
 depois da troca... a = 94 e b = 7;
 */
+//==========================================================================
 
 /*
-
-//respondidio por mim
+//respondidio por mim.
 a = 7;
 b = 94;
 aux = 0;
@@ -19,4 +20,6 @@ console.log('A: '+a);
 console.log('B: '+b);
 */
 
-//resposta do sor
+//resposta do sor.
+
+

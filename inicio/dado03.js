@@ -1,14 +1,15 @@
 /*
 As variaveir tem tipos de valores diferentes:
-  ->booleano - (lógico);
-  ->string - (textos, simbolos, qualquer caracter);
-  ->number - (real, inteiro);
+  ->Booleano - (lógico);
+  ->String - (textos, simbolos, qualquer caracter);
+  ->Number - (real, inteiro);
 */
 
 //aqui estou criando variaveis.
 let number = 23;
 let string = "Omatokita";
 let ola = 10;
+
 console.log(typeof number);
 console.log(typeof string);
 

@@ -1,6 +1,6 @@
 /*
-As variaveir tem tipos de valores diferentes:
-  ->Booleano - (lógico);
+As variaveis tem tipos de valores diferentes:
+  ->Booleano - (Operadores Lógicos);
   ->String - (textos, simbolos, qualquer caracter);
   ->Number - (real, inteiro);
 */

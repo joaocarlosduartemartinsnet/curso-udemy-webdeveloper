@@ -5,9 +5,9 @@ console.log("passo#03");
 console.log(((30+49)/4)*9);
 
 /*
-assim que 
+(É assim que 
 se cria e um comentario
-de multiplas linhas, lembre-se de sempre comentar
+de multiplas linhas) lembre-se de sempre comentar
 em todos os blocos de comandos, para que você não 
 se perca facil em seu proprio codigo.
 mas tome cuidado para nao pouir seu 

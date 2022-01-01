@@ -10,4 +10,6 @@ const avaliacao2 = 6.871;
 const total = avaliacao1*peso1 + avaliacao2*peso2;
 const media = total / (peso1 + peso2);
 
-console.log(media);
+console.log(media.toFixed(2));//aqui ele vai limitar para duas casas decimais apos o ponto.
+console.log(media.toString());//vai realizar uma conversão de numero para string(texto), mas se voce passar o valor dois ele vai convrter para binário EX;
+console.log(media.toString(2));

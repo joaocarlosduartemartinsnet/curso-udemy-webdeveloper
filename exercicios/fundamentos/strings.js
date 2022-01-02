@@ -9,7 +9,7 @@ console.log(escola.indexOf('3'));//aqui ele vai ver se o valor listado esta pres
 console.log(escola.substring(1));//isto quer dizer q ele vai do indice 1, ate o ultimo indice.
 console.log(escola.substring(0, 3));//isto quer dizer que vai começar no indice 0, e vai terminar no indice 3. aviso ele nao vai pegar o indice tres.
 
-console.log('escola '.concat(escola).concat(' !'))//este comando ira fazer uma concatenaçao com o valor da variavel. e mais facil concatenar usando o sinal de   '+'.
+console.log('escola '.concat(escola).concat(' !'))//este comando ira fazer uma concatenaçao com o valor da variavel. e mais facil concatenar usando o sinal de   '+'.//EXEMPLO DE UMA CONTATENAÇÃO COM O "+";
 console.log('escola ' + escola + ' !');
 
 console.log(escola.replace(3, 'e')); //aqui neste comando ele ira fazer uma troca de valores no indece 3, no caso, aqui vai ser de 3 para e.

@@ -14,6 +14,24 @@ console.log(`${valores[0]} , ${valores[3]}`);//Com uso de template.
 console.log(valores[0] + " , " + valores[3]);//Sem o uso de template.
 console.log(valores[4]);//vai dar como valor indefinido pois, nao foi criado uma valor para o Quarto Indice.
 
-//tambem podemos atribuir novos valores aos Indices:
-valores[1] = 30;
-console.log(valores[1]);
+//Tambem podemos atribuir novos valores ao nosso array, e podemos troca-los tambem:
+valores[4] = 30;//Aqui eu atribui mais um valor ao array, criando outro indice, para guardar aquele valor.
+console.log(valores);
+console.log(valores.length);//length vai dizer a quantidade de elementos dentro de nosso Array.
+
+valores.push({id: 3}, null, false, 'teste');//o 'push' ira criar novos elementos para o nosso array.
+console.log(valores);
+
+
+console.log(valores.pop());//Irá retirar o ultimo valor do Array, fazendo com que aquele valor nao pertença mais ao Array.
+console.log(valores);
+
+delete valores[0]; /*outra forma de tirarmos valores do array e usando o 'delete',
+so que o delete nao mantem o valor intacto ele 'destroi/exclui' o valor.*/
+console.log(valores);
+
+delete valores.pop();//aqui ele ira deletar o ultimo valor do Array.
+console.log(valores);
+
+console.log(typeof valores); //no js o tipo do array e object.
+

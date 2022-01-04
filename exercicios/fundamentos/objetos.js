@@ -45,7 +45,3 @@ let prod1 = {
 //Exemplo de  JSON: {'nome': 'queijo', 'numero': '23'};
 
 //Exemplo de OBJETO: {nome: 'joao', numero: 23};
-
-
-
-

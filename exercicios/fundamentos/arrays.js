@@ -1,3 +1,5 @@
+//para criar um array usamos os colchetes '[]';
+
 /*Array ou Vetor = é uma estrutura que, ao contrário das variáveis, que suportam 
 apenas um valor, o Array pode suportar vários valores, e de diferentes tipos,
 que são identificados pelos Indices, que começam do 0(zero).*/

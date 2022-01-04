@@ -19,10 +19,15 @@ console.log(subtracao(4, 3));
 
 
 const imprimir2 = a => console.log(a);//aqui neste exemplo de funcao arrow o nosso parametro e a letra 'a' e a nossa funçao e imprimila no terminal.
-imprimir3('Legal!!!');
+imprimir2('Legal!!!');
 
 //ex, se pasarmos aquela funcao arrow de cima para function ficaria assim.
 /*const imprimir2 = function(a){
     console.log(a);
 };*/
 
+//treinando;
+let cumprimento = a => {
+    console.log(a);
+};
+cumprimento('bom dia');

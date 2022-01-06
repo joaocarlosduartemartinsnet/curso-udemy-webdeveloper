@@ -1,4 +1,4 @@
-//Hoisting => E o movimento padrão de mover a declaração para o topo.
+//Hoisting => É o movimento padrão de mover a declaração para o topo.
 console.log(`a = ${a}`);
 var a = 2;
 console.log(`a = ${a}`);

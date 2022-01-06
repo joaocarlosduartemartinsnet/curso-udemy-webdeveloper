@@ -13,7 +13,20 @@ console.log(meuArray);
 
 function Obj(nome){
     this.nome = nome; 
-    console.log(nome);
+    this.exec = function(){
+        console.log('Exec...');
+    }
+    this.troll = function(){
+        console.log('bom dia....');
+    }
 };
 
 const obj1 = new Obj('joao');
+const obj2 = new Obj('carlitos');
+const oi = new Obj('ola ae');
+
+console.log(oi.nome);
+oi.troll();
+console.log(obj2.nome);
+obj2.exec();
+

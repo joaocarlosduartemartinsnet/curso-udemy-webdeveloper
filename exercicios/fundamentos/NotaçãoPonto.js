@@ -12,7 +12,7 @@ meuArray.push('ola', 23, 'holholholhol');
 console.log(meuArray);
 
 function Obj(nome){
-    this.nome = nome; //O 'this' funciona de forma especial pela linguagem.
+    this.nome = nome;
     this.exec = function(){
         console.log('Exec...');
     }

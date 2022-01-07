@@ -18,6 +18,8 @@ let pessoa = {
 //console.log(pessoa.nome);//sem destructuring 
 //console.log(pessoa.idade, pessoa.nome);
 
+//=============================================================================
+
 //APARTIR DAQUI USAMOS O DESTRUCTING.
 const {nome, idade} = pessoa; //aqui esta querendo dizer, tire de dentro do objeto 'pessoa', os atributos de 'nome' e 'idade';
 console.log(nome, idade);
@@ -30,3 +32,5 @@ console.log(n, i);
 
 const {endereco: {rua, estado, numero}} = pessoa
 console.log(rua, estado, numero);
+
+//!!!CUIDADO!!! PARA NAO ACESSAR ATRIBUTOS INEZISTENTES DENTRO DO OBJETO QUE VOCE QUEIRA ACESSAR!!!.

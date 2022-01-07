@@ -12,3 +12,5 @@ console.log(n1, n3, n5, n4, n6);
 const [, [,nota] ] = [ [2, 8, 8] , [9, 6, 3] ];
 console.log(nota);
 //o nota ta pegando o atributo '6' do segundo array, porque cada virgula usada e tipo pedir para ele pular.
+
+//nos array vale mais apena acessar pelo indice do que pelo destruturing.

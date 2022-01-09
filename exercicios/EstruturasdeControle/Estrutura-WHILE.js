@@ -7,7 +7,7 @@ while(i <= 10){//condiçao/relaçao
 };
 */
 
-/*
+
 function aleatoriovalor(min, max) {
     if(min > max) [min, max] = [max, min];
     let valor = Math.random() * (max - min) + min;
@@ -19,4 +19,4 @@ while(op != -1){
     op = aleatoriovalor(-1, 10);
     console.log('opicao escolhida foi ' + op);
 }
-*/
+

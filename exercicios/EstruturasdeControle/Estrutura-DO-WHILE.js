@@ -1,5 +1,5 @@
 /*
-let i = 0;
+let i;//o do while diferente do while nao necessita de colocarmos um valor nele;
 do{
     console.log(`o numero: ${i}`);
     i++//incrementação
@@ -12,7 +12,7 @@ function aleatoriovalor(min, max) {
     return Math.floor(valor);
 }
 
-let op = 0;
+let op;
 
 do{
     op = aleatoriovalor(-1, 10);

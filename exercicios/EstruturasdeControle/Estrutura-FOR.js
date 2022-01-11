@@ -8,8 +8,8 @@ for(contador = 1; contador <= 12; contador++) {
 */
 
 let notas = [3.5, 7.8, 6.0, 9.8, 10];
-for(let i = 0; i < notas.length; i++) {
-   console.log(`Nota = ${notas[i]}`);//se voce so colocar 'notas' sozinho ele vai pegar todos os valores presentes no array, mas com o contador ele ira imprimir cada nota de forma individual, pois o contador ira pegar cada indice e expressar a nota.
+for(let i = 0; i < notas.length; i++) {//nao se esqueça do 'length';
+   console.log(`Nota = ${notas[i]}`);//se voce so colocar 'notas' sozinho ele vai pegar todos os valores presentes no array, mas com o contador ele ira imprimir cada nota de f orma individual, pois o contador ira pegar cada indice e expressar a nota.
 
    if(notas[i] >= 7) {
        console.log(`Aprovado`);

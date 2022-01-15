@@ -21,7 +21,7 @@ function carro(velocidademaxima = 200, delta = 5){
 }
 
 const uno = new carro();//aqui estamos instanciando a funcao principal assim podemos ter acesso as funções publicas
-uno.acelerar()//esta funçao so esta acessivel e publica graças ao 'this'
+uno.acelerar()//esta funçao so esta acessivel e publica graças ao 'this' 
 console.log(uno.velocidadeatual());
 
 const ferrari = new carro(200, 400);

@@ -1,3 +1,6 @@
+//aqui criamos uma funcao contrutora, que vai conter atributos privados e funçoes publicas ou privadas tambem, mas lebre-se de que para usar uma funcao construtora devemos instanciala antes, EX: tipo + nomedoquevaiinstaciar + newfuncaoqueserainstanciada, 
+//no nosso caso vai ser = [CONST Uno = New Carro();]
+
 function carro(velocidademaxima = 200, delta = 5){
     //atributo privados
     let velocidadeatual = 0;//privado, pois nao usamos o 'this'

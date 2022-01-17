@@ -13,7 +13,7 @@ console.log(criarPessoa())
 function criarProduto(nomeProd, precoProd){
     return {
        nome: nomeProd,
-       peço: precoProd.toFixed(2) - ((8 * precoProd) / 100)      
+       peço: precoProd.toFixed(2) - ((5 * precoProd) / 100)     
     }
 }
-console.log(criarProduto('miojo', 10))
+console.log(criarProduto('Miojo de Ouro', 100))

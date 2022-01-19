@@ -17,7 +17,10 @@ ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemá
 triângulo).
 */
 function trianguloclass(lado1 = 0, lado2 = 0, lado3 = 0){
-      if(lado1==lado2 && lado2==lado3 && lado1==lado3){
+      if(lado1==0 && lado2==0 && lado3==0){
+        console.log('Por Favor, coloque os valores');
+      }
+      else if(lado1==lado2 && lado2==lado3 && lado1==lado3){
          console.log('A Classe do Triângulo e EQUILÁTERO.');
       }
       else if(lado1==lado2 || lado2==lado3 || lado1==lado3){
@@ -28,6 +31,7 @@ function trianguloclass(lado1 = 0, lado2 = 0, lado3 = 0){
       }
 }
 console.log('exer02')
+trianguloclass();
 trianguloclass(2,2,2);
 trianguloclass(2,1,2);
 trianguloclass(1,4,7);
@@ -122,9 +126,44 @@ calcbaskara(100, 43, 1)
 //===============================================================================
 
 
+/*
+08) Pedro joga N jogos de basquete por temporada. Para saber como está ele está progredindo, ele mantém
+registro de todos os as pontuações feitas por jogo. Após cada jogo ele anota no novo valor e confere se o
+mesmo é maior ou menor que seu melhor e pior desempenho. Dada uma lista string = “pontuação1 pontuação2
+pontuação3 etc..”, escreva uma função que ao recebê-la irá comparar os valores um a um e irá retornar um
+vetor com o número de vezes que ele bateu seu recorde de maior número de pontos e quando fez seu pior
+jogo. (Número do pior jogo).
+Obs.: O primeiro jogo não conta como novo recorde do melhor.
+Exemplo:
+String: “10 20 20 8 25 3 0 30 1”
+Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior pontuação
+aconteceu no sétimo jogo.)
+*/
+
+function MelhorePiorRecorde(recorde = [pontuações]){
+    console.log('Melhores pontuações')
+    for(i=0; i < recorde.length; i++){
+       if(recorde[i] > 10){
+           console.log([i - 3]+'.Pontuação: '+recorde[i]);
+      }
+    }
+    console.log('Piores pontuações')
+    for(i=0; i < recorde.length; i++){
+        if(recorde[i] <= 10){
+            console.log([i]+'.Pontuação: '+recorde[i]);
+       }
+     }
+}
+console.log('exer08')
+MelhorePiorRecorde(pontuações = [10, 3, 4, 7, 30, 20, 80]);
+
+
 
 //=============================================================================
 
+
+
+//=============================================================================
 
 /*
 40) Faça uma função que receba como parâmetro um vetor de notas e mostre os conceitos de cada uma de

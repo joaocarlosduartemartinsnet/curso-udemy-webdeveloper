@@ -240,10 +240,10 @@ dia. Considere que domingo é o dia 1 e sábado é o dia 7. Utilize a estrutura 
 console.log('exer13')
 op = 6
 switch(op){
-   case 1, 2, 3, 4, 5:
+   case 1:
       console.log('dia util')
    break
-   case 6, 7:
+   case 7:
       console.log('dia nao util')
    break
    default:

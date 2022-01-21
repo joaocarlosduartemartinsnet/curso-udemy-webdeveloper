@@ -232,10 +232,24 @@ fatorial(9)
 //=============================================================================
 
 
+/*
+13) Crie um programa que exibe se um dia é dia útil, fim de semana ou dia inválido dado o número referente ao
+dia. Considere que domingo é o dia 1 e sábado é o dia 7. Utilize a estrutura Switch. 
+*///sinto muito nao entendi muito bem!
 
-
-
-
+console.log('exer13')
+op = 6
+switch(op){
+   case 1, 2, 3, 4, 5:
+      console.log('dia util')
+   break
+   case 6, 7:
+      console.log('dia nao util')
+   break
+   default:
+      console.log('erro digite um novo valor plissssssssssssss')
+   break
+}
 
 //=============================================================================
 

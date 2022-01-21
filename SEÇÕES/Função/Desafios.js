@@ -162,6 +162,79 @@ MelhorePiorRecorde(pontuações = [10, 3, 4, 7, 30, 20, 80]);
 //=============================================================================
 
 
+/*
+09) Construa uma função para um sistema de notas de uma instituição que possui a seguinte política de
+classificação: Todo aluno recebe uma nota de 0 a 100. Alunos com nota abaixo de 40 são reprovados. As notas
+possuem a seguinte regra de arredondamento: Se a diferença entre a nota e o próximo múltiplo de 5 for menor
+que 3, arredondar a nota para esse próximo múltiplo de 5. Se a nota for abaixo de 38, não é feito nenhum
+arredondamento pois esta nota resulta na reprovação do aluno. Por exemplo, a nota 84 será arredondada para
+85, mas a nota 29 não será arredondada por ser abaixo de 40 e não ser possível arredondamento eficiente, ou
+seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondamento é possível pois atingirá 40
+e o aluno será aprovado.
+*/
+
+
+function clasficaaluno(notas = [valores]){
+    for(let i=0; i < notas.length; i++){
+       if(notas[i] >= 50 || notas[i] >= 45){
+          notas[i] = notas[i] + 5
+       }    
+       if(notas[i] <= 49){
+         console.log("A Nota do Aluno com Arredondamento foi " + notas[i] + ' O Aluno foi Reprovado');
+       }
+       else if(notas[i] >= 50){
+         console.log("A Nota do Aluno com Arredondamento foi " + notas[i] + ' O Aluno foi Aprovado');
+      }
+    }
+}
+console.log('exer09')
+clasficaaluno(valores = [10, 40, 45, 47, 39, 38, 50, 80, 93])
+
+//=============================================================================
+
+/*
+10) Crie uma função que verifica se um número inteiro passado como parêmetro é divisível por 3 e retorne true
+ou false.
+*/
+
+
+function  verificarNumero(numeroo){
+    numero = numeroo / 3;
+    if(Number.isInteger(numero) == true){
+        console.log('VERDADEIRO!!!!!!')
+    }
+    else{
+        console.log('FALSO!!!!!!')
+    }
+}
+console.log('exer10')
+verificarNumero(9)
+
+
+//=============================================================================
+
+
+/*
+12) Faça um algoritmo que calcule o fatorial de um número.
+*/
+
+function fatorial(num){
+    let fat = 1
+    for(i=1; i <= num; i++){
+       fat = fat * i;
+       console.log(fat)
+    }
+}
+console.log('exer12')
+fatorial(9)
+
+
+//=============================================================================
+
+
+
+
+
 
 
 //=============================================================================

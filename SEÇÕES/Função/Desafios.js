@@ -252,7 +252,39 @@ switch(op){
 }
 
 //=============================================================================
+/*
+14) Crie uma estrutura condicional switch que receba uma string com o nome de uma fruta e que possua três
+casos: Caso maçã, retorne no console: “Não vendemos esta fruta aqui”. Caso kiwi, retorne: “Estamos com
+escassez de kiwis”. Caso melancia, retorne: “Aqui está, são 3 reais o quilo”. Teste com estas três opções .Crie
+também um default, que retornará uma mensagem de erro no console
+*/
 
+console.log('exer14');
+fruta = 'melao'
+switch(fruta){
+    case 'maçã':
+      if(fruta == 'maçã'){
+          console.log('Não vendemos esta fruta aqui')
+      }
+     break;
+
+     case 'kiwi':
+      if(fruta == 'kiwi'){
+          console.log('Estamos com escassez de kiwis')
+      }
+     break;
+
+     case 'melancia':
+      if(fruta == 'melancia'){
+          console.log('Aqui está, são 3 reais o quilo')
+      }
+     break;
+
+     default:
+         console.log('nao temos isto aqui')
+      break;
+}
+//============================================================================
 
 
 

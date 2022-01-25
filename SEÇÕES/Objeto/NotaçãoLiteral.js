@@ -16,5 +16,19 @@ obj3 = {}
 obj3[nomeAttr] = valorAttr
 console.log(obj3)
 
+//==============================================================================
+
 const obj4 = {[nomeAttr]: valorAttr}
 console.log(obj4)
+
+//=============================================================================
+
+const obj5 = {
+    function1: function(){
+        //...
+    },
+    funcao2(){
+        //...
+    }
+}
+console.log(obj5);

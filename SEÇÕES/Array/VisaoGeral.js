@@ -29,21 +29,24 @@ delete aprovados[1] //a funçao 'delete', serve para (excluir um elemento, ou to
 console.log(aprovados[1])
 console.log(aprovados[2])
 
+//==============================================================================
+
 aprovados = ['bia', 'joao', 'carlitos']
 //aprovados.splice(0, 2).
-aprovados.splice(1, 2).// a funcao 'splice' seria para excluir e adicionar, o 1 parametro e para escolher o identificador de onde vai começar a excluir, e o 2 parametro e a quantidade de elementos que serão excluidos do array.
+aprovados.splice(1, 2).// a funcao 'splice' seria para excluir e adicionar, o 1 parametro e para escolher o indiçe de onde vai começar a excluir, e o 2 parametro e a quantidade de elementos que serão excluidos do array.
 
 aprovados.splice(1, 2, 'elemento1', 'elemento2')//aqui alem de excluir tambem vai poder adicionar novos elementos, nos lugares daqueles que foram excluidos
 
 
-aprovados.splice(1, 0, 'elemento1', 'elemento2')//aqui ele vai começar do identificador 1, nao vai realizar nenhuma exclusao, e vai adicionar os novos elementos apos o elemento do identificador 1.
+aprovados.splice(1, 0, 'elemento1', 'elemento2')//aqui ele vai começar do indiçe 1, nao vai realizar nenhuma exclusao, e vai adicionar os novos elementos apos o elemento do indiçe 1.
+
 console.log(aprovados)
 
 /*
 splice(
-  1-(parametro e o identificador de onde vai começar.)
+  1-(parametro e o indiçe de onde vai começar.)
 
-  2-(parametro e a quantidade de elementos que serao excluidos, apos o identificador do primeiro parametro ser escolhido.)
+  2-(parametro e a quantidade de elementos que serao excluidos, apos o indiçe do primeiro parametro ser escolhido.)
 
   3-(o resto seria mais para adicionar elementos.)
     )

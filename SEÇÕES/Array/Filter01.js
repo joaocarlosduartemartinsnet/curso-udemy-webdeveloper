@@ -8,7 +8,7 @@ const produtos = [
 ]
 
 //o filter serve para filtrar, pegar so o que nos interesssa. atraves de codigos.
-console.log(produtos.filter(function(p){
+console.log(produtos.filter(function(p){//so um parametro, pois queremos somente ter acesso aos 'nomes'
       return p.preco > 2500 //aqui nos pegamos os proodutos acima dos 2500 reais
 }))
 

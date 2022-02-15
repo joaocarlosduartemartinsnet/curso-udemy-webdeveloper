@@ -104,10 +104,64 @@ mes(13)
 //==========================================================
 
 /*
-5)
+5)Crie uma função que receba dois números e retorne se o primeiro é maior ou igual ao segundo.
+
+function MaiorouIgual(n1, n2){
+    if(n1 >= n2){
+        console.log('VERDADEIRO!!!!')
+    }else{
+        console.log('FALSE!!!')
+    }
+}
+MaiorouIgual(4, 4)
 */
 
+//=========================================================
 
+/*
+6)Escreva uma função que receba um valor booleano ou numérico. Se o parâmetro fornecido for booleano, o
+retorno da função deverá ser o inverso. Por exemplo, se a entrada for false, retornará true. Se o parâmetro for
+numérico, o retorno será o número inverso. Por exemplo, se for fornecido 1, o retorno será 1. Se o parâmetro de
+entrada não for de nenhum dos tipo acima, retorne "booleano ou número esperados, mas o parâmetro é do tipo
+...".
 
+function inverso(valor) {
+    const tipo = typeof valor
+    if (tipo == "boolean") 
+         console.log(!valor)
+    else if (tipo == "number") 
+         console.log(-valor)
+    else
+    return `booleano ou número esperados, mas o parâmetro é do tipo ${tipo}`
+}
+console.log(inverso(false))
+*/
 
+//========================================================
 
+/*
+7)Crie uma função que receba quatro números como parâmetro (numero, minimo, maximo, inclusivo) e retorne se
+o parâmetro numero (o primeiro) está entre minimo e maximo. Quando o parâmetro inclusivo for true, tenha
+"entre" como inlusivo, ou seja, considerando se numero é igual a minimo ou a maximo. Caso o parâmetro
+inclusivo não seja informado, seu valor padrão deverá ser false, portanto, a lógica será exclusiva, não
+considerando se numero é igual a minimo ou a maximo.
+
+//SOLUÇÃO 01
+function estaEntre(numero, minimo, maximo, inclusivo = false){
+    if(inclusivo) return numero >= minimo && numero <= maximo;
+    return numero > minimo && numero < maximo;
+}
+console.log(estaEntre(90, 100, 160))
+
+//SOLUÇÃO 02
+function estaEntre(numero, minimo, maximo){
+    if(numero >= minimo && numero <= maximo){
+        console.log('true')
+    }else{
+        console.log('false')
+    }
+}
+estaEntre(90, 100, 160)
+*/
+
+//=========================================================

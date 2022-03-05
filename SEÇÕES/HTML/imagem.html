@@ -1,12 +1,91 @@
+<style>
+
+  .circulo{
+    width: 490px;
+    background-color: #d67878;
+  }
+  .imgalterada{
+    border-radius: 10em;
+    width: 10em;
+    height: 10em;
+    margin-left: 10em;
+  }
+  #texto{
+     width: 450px;
+     text-align: justify;
+     text-indent: 2em;
+     font-family: 'Courier New', Courier, monospace;
+     color: blue;
+  }
+  .cidade{
+     position: absolute;
+     width: 600px;
+     height: 450px;
+     background-image: url('https://st.depositphotos.com/1780879/3816/i/600/depositphotos_38166573-stock-photo-trees-with-sunbeams.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+
+  .dd{
+    color: #ffffff;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    font-size: 32px;
+    font-weight: bolder;
+    text-shadow: 3px 2px 5px #ffffff;
+  }
+
+  #ola{
+    margin-top: 500px
+  }
+</style>
+
+
+
 <p>
   <h2>exportando uma imagem deu um servidor do google</h2>
   <img src="https://i.pinimg.com/564x/e4/06/5f/e4065f8e59ddd0706dcd1abd38081735.jpg" 
   alt="ioga"
   width="500px" height="600px">
 </p>
+
 <p>
     <h2>imagem baixada</h2>
     <img src="./imagem/imagem.jpg" 
     alt="lua"
     width="500px" height="300px">
+</p>
+
+<p>
+    <h2>Gifs</h2>
+    <img src="https://c.tenor.com/AC6raYqaBjUAAAAd/stress-cansado.gif" alt="lua sobre agua">
+</p>
+
+<h2>fundo e imagem alterados com css</h2>
+<p class="circulo">
+    <img class="imgalterada" src="https://w7.pngwing.com/pngs/995/775/png-transparent-iphone-computer-icons-telephone-ringing-smartphone-mobile-electronics-telephone-call-mobile-phones.png" alt="">
+</p>
+
+<p> 
+  <h2>imagem com texto</h2>
+   <img src="./imagem/imagem.jpg" alt="treinotexto" height="90em" align="left">
+   <p id="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium officia quos sint ratione exercitationem dicta sapiente eos accusantium error totam. Voluptates amet nemo non, alias ipsa quaerat natus consectetur aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus suscipit perspiciatis, sunt sequi minima itaque cum at consequatur laborum? Nam animi praesentium libero, nisi architecto totam iste odit quis consequatur.</p>
+</p>
+
+<p class="cidade">
+    <p class="dd">USANDO UMA IMAGEM DE FUNDO</p>
+</p>
+
+<h2>imagem adaptativa</h2>
+<p id="ola">
+  <picture>
+    <img src="https://s2.glbimg.com/2yK3rTPvEDofzpusIhAgrkasz9A=/e.glbimg.com/og/ed/f/original/2019/09/30/oriontree_fairbairn_960.jpg" alt="arvore" height="600px">
+
+     <source  srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png"
+     media="(max-width: 600px)">
+
+ 
+
+  </picture>
 </p>

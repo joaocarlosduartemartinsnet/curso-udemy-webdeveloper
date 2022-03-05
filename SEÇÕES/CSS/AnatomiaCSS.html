@@ -5,7 +5,32 @@
     <title>Anatomia Css</title>
     
     <style>
-        
+        @font-face {
+            font-family: 'min';
+            src: url('./Capture\ it.ttf');
+        }
+        .seletor{
+            color: #e7fa3b;
+            text-align: center;
+            font-size: 2em; 
+            border: 7px dashed #da5b21;
+            font-family: 'min';
+            background-color: #0a8fcc;
+        }
+
+        /*usando pseudo classe*/
+        .seletor:hover{
+          background-color: #16f73c;
+        }
+
+        /*usando um pseudoelemento*/
+        .seletor::after, .seletor::before{
+            content:"♚"
+        }
+        .seletor::first-letter{
+            font-size: 2em;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>

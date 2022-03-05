@@ -1,0 +1,44 @@
+<!--colocamos um video e tiramos a opçao de download da lista de contloles-->
+<video  id="meuvideo" height="270" width="480" controls autoplay controlslist="download">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4">
+    <p>seu browser nao suporta sorry</p>
+</video>
+
+<style>
+    .progresso{
+        height: 20px;
+        width: 500px;
+        border: 4px solid rgb(194, 57, 57);
+    }
+    .progresso > div{
+        background-color: red;
+        color: #fff;
+        height: 100%;
+        text-align: right;
+        font-size: 14px;
+        width: 15%;
+    }
+</style>
+<!--usando js para criar os controles do video de forma manual-->
+
+<div vm-progresso="meuvideo" class="progresso">
+       <div></div>
+</div>
+
+
+<div>
+    <button vm-play="meuvideo">Play</button>
+    <button vm-pause="meuvideo">Pause</button>
+</div>
+
+
+<script type="text/javascript">
+   function configurarvideo(id){
+     const video = document.getElementById(id);
+     video.oncontextmenu = () => false;
+
+     document.querySelector(`[vm-play=${id}]`).onclick = e => video.play();
+    document.querySelector(`[vm-pause=${id}]`).onclick = e => video.pause();
+   } 
+   configurarvideo('meuvideo')
+</script

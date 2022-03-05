@@ -1,0 +1,21 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "pwa-msedge",
+            "request": "launch",
+            "name": "Open umPoucoDeCSS.html",
+            "file": "c:\\Users\\joao carlos\\OneDrive\\Documentos\\estudos\\curso-udemy-webdeveloper\\SEÇÕES\\HTML\\umPoucoDeCSS.html"
+        }
+    ]
+}

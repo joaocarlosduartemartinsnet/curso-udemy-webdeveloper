@@ -1,0 +1,54 @@
+<!--temos varias unidades
+
+ -ABSOLUTOS:
+   +PX.
+   +CM.
+   +MM.
+ 
+ -VIEWPORT: (%)
+   +VH-(view height).
+   +VW-(view width).
+   +Vmin.
+   +Vmax.
+
+ -FONT:
+   +REM.
+   +EM.
+-->
+
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>Unidades 01</title>
+       <style>
+         .alterado{
+           font-size: 8vh;
+           margin: 2vh;
+         }
+          p{/*uso de unidades relacionais*/
+            font-size: 8vh;
+            padding: 5%;
+            border: 1vw solid #ccc;
+            margin: 8%;
+            width: 20vw;
+            height: 15vh;
+          } 
+          #i{/*uso de unidades absolutas*/
+            font-size: 40px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 30px;
+            width: 4em;
+            height: 20mm;
+
+          }
+       </style> 
+    </head>
+    <body>
+       <span class="alterado">uso do vh</span>
+        <p>oi</p>
+
+        <span class="alterado">uso do em ou px ou cm etc..(tamanhos definidos)</span><br>
+        <span id="i">oi</span>
+    </body>
+</html>

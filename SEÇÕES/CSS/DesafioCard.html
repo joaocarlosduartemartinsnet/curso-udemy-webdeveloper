@@ -7,70 +7,98 @@
     <title>Card</title>
 
     <style>
-        *{
-            box-sizing: border-box;
+        .curso{
+            /*float: left; */
+            font-family: Arial, Helvetica, sans-serif;
+            border: solid 1px #000;
+            box-shadow: 3px 3px 5px black;
+            width: 200px;
+            height: 260px;
+            margin: 5px 20px;
+            padding: 5px;
+            display: inline-block;
         }
 
-        .curso{
-            display: inline-block;
-            border: 2px solid #a39e9e;
-            width: 20%;
-            margin: 3px; 
+        .curso img{
+            width: 100%;
+            max-height: 50%;
+        }
+
+        .curso-info{
+            padding: 10px;
+            height: 90px;
+            overflow: hidden;
+        }
+
+        .curso-info h4{
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .curso-preco{
+            float: right;
             padding: 2px;
         }
-        .curso img{
-             width: 100%;
-             height: 40%;
-        }
-       .curso-info{
-           color: #000000;
-           text-indent: 20px;
-           text-align: justify;
-           font-size: 20px;
-           font-family: Arial, Helvetica, sans-serif;
-       }
-       .curso-info h3{
-           margin: 0px;
-           text-align: center;
-       }
-       .curso-info h4{
-           margin: 0;
-           padding: -1px;
-           text-align: left;
-       }
-       .curso-preco{
-           text-align: right;
-           margin: 6px;
-           color: #4b4949;
-           font-weight: bolder;
-           font-size: 4vh;
-       }
 
+        .preco-de{
+            text-decoration: line-through;
+            color: red;
+            font-weight: bold;
+        }
+
+        .preco-por{
+            color: #0fdb0f; 
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        h1{
+            text-align: center;
+            margin: 0px;
+        }
     </style>
 </head>
 <body>
-    <h1>Cursos Onlines</h1>
+    <h1>CARDS</h1>
+
     <div class="curso">
-       <img src="https://veja.abril.com.br/wp-content/uploads/2019/09/astrologia-aplicativo-celular-166.jpg.jpg" alt="dinossauro">
-       <div class="curso-info">
-           <h3>Astrologia</h3>
-           <h4>Descrição:</h4>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda quisquam sequi?</p>
-       </div>
-       <div class="curso-preco">
-           <span>Preço: </span><span> R$50,40</span>
-       </div>
-    </div>
-    <div class="curso">
-        <img src="https://veja.abril.com.br/wp-content/uploads/2019/09/astrologia-aplicativo-celular-166.jpg.jpg" alt="dinossauro">
+
+        <img src="https://i.pinimg.com/474x/9f/1d/3c/9f1d3c49c8d682a929c66e8287e83685.jpg" alt="dinossauro">
+
+
         <div class="curso-info">
-            <h3>Astrologia</h3>
-            <h4>Descrição:</h4>
+            <h4>Astrologia</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda quisquam sequi?</p>
         </div>
+
+
         <div class="curso-preco">
-            <span>Preço: </span><span> R$50,40</span>
+            <span class="preco-de">R$80,50</span>
+            <span class="preco-por"> R$50,40</span>
         </div>
+
      </div>
+
+
+
+     <div class="curso">
+
+        <img src="https://media.istockphoto.com/vectors/dinosaur-and-prehistoric-reptile-animal-sketches-vector-id1033045320?k=20&m=1033045320&s=612x612&w=0&h=VvRRkwK6qHQ7mqinkay5kXxrtvCB6kGsTCg5ooIofAU=" alt="dinossauro">
+
+
+        <div class="curso-info">
+            <h4>Dinossauro</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda quisquam sequi?</p>
+        </div>
+
+
+        <div class="curso-preco">
+            <span class="preco-de">R$80,50</span>
+            <span class="preco-por"> R$20,50</span>
+        </div>
+
+     </div>
+
 </body>
 </html>

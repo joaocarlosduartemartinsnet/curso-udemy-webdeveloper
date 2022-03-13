@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+     
+    <style>
+        *{
+            box-sizing: border-box; 
+        }
+
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c4c2c2;
+        }
+
+        .cabecalho{
+            background-color: #474747;
+            border-bottom: 5px solid #998989;
+            height: 80px;
+            box-sizing: content-box; /*vai englobar o conteudo com a borda porem como a altura foi definida somente a borda vai englobar o conteudo*/
+
+        }
+
+        .logo{
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+
+        .logo img{
+            height: 100%;
+        }
+
+        .menu-toggle{
+           float: right;
+           color: white;
+           background-color: #727171;
+           border: 1px solid #ada9a9;
+           font-size: 20px;
+           border-radius: 6px;
+           height: 40px;
+           padding: 10px 20px;
+           margin: 20px 15px;
+        }
+
+        .menu{
+            display: inline-block;
+            vertical-align: top;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li{
+            display: inline-block;
+        }
+
+        .cabecalho a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.3em;
+        }
+        
+        .menu a{
+            padding: 20px 5px;
+        }
+
+        .autenticacao{
+            float: right;
+            margin: 20px 20px;
+        }
+
+         /*o ponto selected vai manter as fomataçoes no ultimo elemento selecionado
+         mas para isso vamos criar um em js*/
+        .menu a:hover, .menu a.selected{
+            background-color: #565688;
+            color: black;
+        }
+
+        .botao-destaque{
+           background-color: red;
+           border-radius: 22px;
+           padding: 15px 10px;
+        }
+
+        @media(min-width:680px){
+                .menu-toggle{
+                    display: none;
+                }
+        }
+        @media(max-width:680px){
+                .menu{
+                    display: none;
+                }
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!--dentro do header ficara os menus(no NAV) e a logo(numa div pripria pra ela),e mais uma Aside onde teremos nosso login e cadastro-->
+    <header class="cabecalho"> 
+
+        <!--logo q vai ter um link direto com o inicio-->
+          <div class="logo">
+             <a href="#Inicio">
+                 <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="logo">
+             </a>
+          </div>
+
+          <button class="menu-toggle">
+              <i class="fa fa-lg fa-bars">≡</i>
+          </button>
+
+          <!--a parte da area onde vai ter os menu-->
+          <nav class="menu">
+               <ul>
+                  <li>
+                      <a href="#inicio">Inicio</a>
+                  </li>
+                  
+                  <li>
+                      <a href="#curso">Cursos</a>
+                  </li>
+
+                  <li>
+                      <a href="#sobre">Sobre</a>
+                  </li>
+
+                  <li>
+                      <a href="#contato">Contato</a>
+                  </li>
+               </ul>
+          </nav>
+
+        <!--area onde criaremos o os links para o login e o cadastro-->
+          <aside class="autenticacao">
+              <a href="#">Login</a>
+              <a href="#" class="botao-destaque">Cadastro</a>
+          </aside>
+    </header>
+
+    <script>
+        window.onhashchang = function(e) {
+            const oldurl = e.oldurl.split('#')[1]
+            const newurl = e.newurl.split('#')[1]
+            console.log(oldurl, newurl)
+            
+            const oldmenu = document.querySelector(`.menu a[href='#${oldurl}']`)
+            const newmenu = document.querySelector(`.menu a[href='#${newurl}']`)
+
+            oldmenu && oldmenu.classList.remove('selected')/*aqui vai excluir a url antiga e a classi antiga da url*/
+            newmenu && newmenu.classList.add('selected')/*aqui vai eadicionar uma nova url e uma classe ao menu clicado*/
+        }
+    </script>
+</body>
+</html>

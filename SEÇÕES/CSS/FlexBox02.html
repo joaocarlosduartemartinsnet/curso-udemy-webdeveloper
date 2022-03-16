@@ -19,6 +19,46 @@
 
         .flex-container{
             display: flex;
+            height: 300px;
+            width: 600px;
+        }
+
+        /*NTH-CHILD(elemento selecionado)- serve para selecionar e alterar um elemento especifico*/
+        .flex-container div:nth-child(3){
+            background-color: indianred;
+
+            order: 1; /*passa a ter uma ordem maior que os outros*/
+            order: 0; /*volta para sua ordem inicial*/
+            order: -1; /*volta uma ordem a menos dele*/
+
+
+            align-self: center; /*alinha nocentro*/
+            align-self: flex-end; /*alinha no filnal*/
+            align-self: flex-start; /*alinha no começo*/
+            align-self: stretch; /**/
+        }
+
+        .flex-container div{
+            width: 100px;
+
+            /*Flex Grow*/
+            flex-grow: 0;
+            flex-grow: 1;
+        }
+
+        .flex-container div:nth-child(1){
+           flex-grow: 2;
+        }
+
+        .flex-container{
+            width: 300px;
+
+            flex-shrink: 1;/*vai encolher aqule que voce escolher*/
+        }
+
+
+        .flex-container div:nth-child(2){
+            flex-shrink: 6;
         }
     </style>
    

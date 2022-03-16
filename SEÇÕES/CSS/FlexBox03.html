@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box 02</title>
+    
+    <style>
+
+        div{
+           border: 5px solid black;
+           font-size: 40px;
+        }
+
+        .flex-container div{
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+         /*
+         row - representa a largura
+         column - representa a altura 
+         */
+
+        .flex-container div{
+            flex-basis: 100px;/*dimençao de um elemento*/
+             width: 200px;
+        }
+
+        /*nth-child(elemento selecionado) - voce usa para escolher um elemento especifico para formatalo*/
+        .flex-container div:nth-child(4){
+            /*forma short - grow shirk basis*/
+            flex: 3 6 100px;
+        }
+
+        .flex-container{
+            width: 300px;
+            width: 600px;
+        }
+    </style>
+   
+</head>
+<body>
+   <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+   </div>
+</body>
+</html>

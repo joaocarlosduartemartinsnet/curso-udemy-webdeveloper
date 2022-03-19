@@ -7,5 +7,3 @@ function criarProduto(nomeProd, precoProd){
 }
 console.log(criarProduto('Gelatina', 3.40));
 console.log(criarProduto('Geladeira', 300.9000));
-
-

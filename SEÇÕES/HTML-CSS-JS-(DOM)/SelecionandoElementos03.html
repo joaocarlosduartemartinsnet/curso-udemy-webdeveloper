@@ -38,7 +38,9 @@
             border-radius: 6px;
             background-color: #000000a1;
             margin: 10px 20%;
+            color: white;
             padding: 6px;
+            width: 10em;
         }
 
         select:hover{
@@ -86,7 +88,15 @@
 
 
     <script>
-       console.log(document.form)
+       document.getElementsByName('Pesquisar')/*aqui vai pegar o elemento pelo nome*/
+        
+       /*apartir daqui farei mostras os elementos no console do browser*/
+       console.log(document.getElementsByTagName('form'))
+       console.log(document.Pesquisar)
+       console.log(document.Pesquisar.q)
+
+       document.Pesquisar.q.value = 'linux Brasil'/*estamos criando um value para o input de texto*/
+       document.Pesquisar.hl.value = 'en-us'
     </script>
 </body>
 </html>

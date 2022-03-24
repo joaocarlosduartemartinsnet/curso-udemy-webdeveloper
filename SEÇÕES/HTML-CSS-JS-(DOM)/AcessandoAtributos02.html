@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessando Atributos 02</title>
+
+    <style>
+        body{
+            background-color: #004079;
+        }
+
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 5px solid white;
+            font-size: 2em;
+            color: aliceblue;
+            padding: 50px;
+            width: 350px;
+            height: 200px;
+            background-color: #bb1e1e;
+            margin: 3em 30%;
+        }
+
+        ul > li{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div>
+        <label for="Compras">Compras</label>
+
+        <ul id="compras" destino="escritorio" data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo Descartavel</li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        const lista = document.querySelector('ul')
+        console.log('elementos "ul"...............')
+        console.log(lista.childNodes)
+        lista.setAttribute('status', 'ok')//setAttribute serve par aadicionar ou alterar um valor, neste exemplo estamos adicionado (statur="ok");
+
+        lista.setAttribute('destino', 'purgatorio')//setAttribute serve par aadicionar ou alterar um valor, neste exemplo estamos alterando (destino="escritorio") para (destino="purgatorio"); 
+
+        lista.removeAttribute('destino');//aqui estamos removendo o atributo destino.
+
+//===============================================================================
+
+        //TREINO
+        const a = document.querySelector('#compras')
+        console.log(a.getAttribute('destino'))
+        console.log(a.getAttribute('data-urgencia'))
+
+
+        let b = document.querySelector('label')
+        console.log(b.getAttribute('for'))
+    </script>
+
+</body>
+</html>

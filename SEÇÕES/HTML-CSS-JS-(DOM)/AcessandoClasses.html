@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessando Classes</title>
+ 
+    <style>
+      body{
+        background-color: #143d74;
+      }
+
+      div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: orange;
+        border: 5px solid white;
+        width: 10em;
+        height: 5em;
+        padding: 0.5em; 
+        color: white;
+        font-size: 1.4em;
+        margin: 4em 35%;
+        font-weight: bold;
+      }
+      
+      .ola{
+          color: yellow;
+          border: 5px solid yellow;
+      }
+    </style>
+</head>
+
+<body class="conteudo-exercicio">
+   <div class="" onclick="botao()">
+      Classes
+   </div>    
+
+
+   <script>  
+     const c = document.querySelector('div')
+      
+     /*
+     apartir das "ClassList" - podemos (alterar, remover ou adicionar uma class).
+     */
+
+     //aqui estamos adicionando uma classe
+      c.classList.remove('ola')
+      c.classList.add('ola')
+
+      c.classList.toggle('ola')//'toggle' e alternancia se existe ele remove se nao existe ele adiciona.
+
+      console.log(c.classList.contains('ola'))//vai verificar se o conteudo contem uma determinada classe.
+
+      console.log(c.classList.length)//vai avisar quantas classes determinado conteudo tem
+
+
+
+
+//==========================================================================
+
+      //TREINAMENTO 
+      function botao(){  
+          document.querySelector('div').classList.toggle('ola')
+      }
+
+//neste 'for' estou imprimintdo todas as listas de classe.
+      let classe = document.querySelector('div').classList
+      for(let elemeto of classe){
+          console.log(elemeto)
+      }
+
+      //or
+
+//aqui e o mesmo de cima so que usando o 'ForEach'.
+      classe = document.querySelector('div')
+      classe.foreach(elemento => console.log(elemento))
+   </script>
+</body>
+</html>

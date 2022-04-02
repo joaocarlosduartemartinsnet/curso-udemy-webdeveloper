@@ -46,6 +46,17 @@
         //aqui estou selecionando um elemento pelo seu id, e adicionando uma classe a ele.
         document.getElementById('primeiro').classList.add('destaque')
 
+        //aqui estou selecionando mais de um elemento pelo nome da tag, e adicionando uma classe a ele.
+        //quando trabalhamos com um grupo de tags e melhor colocalas dentro de um array para trabalhar com elas.
+        const divs = document.getElementsByTagName('div')
+        Array.from(divs).forEach(element => element.classList.remove('destaque'))
+
+        
+        //aqui vai pegar todos os elementos com um determinado nome de classe para aplicar um por um.
+        const ultimoElemento = document.getElementsByClassName('terceiro')
+        for(let elemento of ultimoElemento){
+            elemento.classList.add('destaque')
+        }
     </script>
 </body>
 </html>

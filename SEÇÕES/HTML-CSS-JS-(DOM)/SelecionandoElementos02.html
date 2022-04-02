@@ -44,18 +44,32 @@
     <div class="terceiro">Terceiro</div>
 
     <script>
-       document.querySelector("")//com isso podemos selecionar qualquer elemento, se for pelo id coloque uma '#' antes, se for pela classe coloeque um '.' antes, se for pela tag apena coloque o nome da tag.
+     document.querySelector("")//com isso podemos selecionar qualquer elemento, se for pelo id coloque uma '#' antes, se for pela classe coloeque um '.' antes, se for pela tag apena coloque o nome da tag.
 
-       document.querySelectorAll("")//e igual ao de cima, porem seleciona tudo, se voce quiser selecionar todas as tags de um determinado no em comun, voce pode facilmente usando o 'querySelectorAll()'.
+     document.querySelectorAll("")//e igual ao de cima, porem seleciona tudo, se voce quiser selecionar todas as tags de um determinado no em comun, voce pode facilmente usando o 'querySelectorAll()'.
 
-       
-        
+
+        //aqui criamos uma funçao anonima para add ou remover classe destque, pois maior parte das vezes vamos adicionar e remover.
+        const seleciona = function(selecionado) {
+            document.querySelectorAll(selecionado).forEach(element => element.classList.add('destaque'))
+        }
+
+        const desCeleciona = function(selecionado){
+             document.querySelectorAll(selecionado).forEach(element => element.classList.remove('destaque'))
+        }
+
+
+        seleciona('div')
+        desCeleciona('#primeiro')
+        desCeleciona('.terceiro')
+        desCeleciona('div:nth-of-type(2)')
+
 
 
 
 
     //TREINAMENTO:
-        const divis = document.querySelectorAll("div")
+       /* const divis = document.querySelectorAll("div")
         let arraydiv =  [...divis]
         for(let element of arraydiv){
             element.classList.add('destaque')
@@ -64,7 +78,7 @@
         //ou
 
         const divs = document.querySelectorAll("div")
-        Array.from(divs).forEach(element => element.classList.add('destaque'))
+        Array.from(divs).forEach(element => element.classList.add('destaque'))*/
 
     </script>
 </body>

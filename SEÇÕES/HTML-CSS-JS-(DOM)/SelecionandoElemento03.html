@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Elementos 03</title>
+
+</head>
+<body>
+   <h1>formulario</h1> 
+   <form name="pesquisa" action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="digite aqui">
+      <select name="hl">
+          <option value="pt-br">portugues</option>
+          <option value="en-us">english</option>
+      </select>
+      <button>Pesquisar</button>
+   </form>   
+
+   <script>
+       console.log(document.forms)
+       console.log(document.getElementsByName('pesquisa'))
+       console.log(document.pesquisa.q)
+       document.pesquisa.q.value = "linux"
+       console.log(document.pesquisa.hl)
+       console.log(document.pesquisa.hl.selectedIndex)
+   </script>
+</body>
+</html>

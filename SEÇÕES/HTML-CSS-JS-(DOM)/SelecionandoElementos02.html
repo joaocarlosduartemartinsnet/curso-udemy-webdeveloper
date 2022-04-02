@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Elementos 02</title>
+    <style>
+        body{
+            background-color: #001653;
+        }
+        
+        div{
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid white; 
+            background-color: orange;
+            padding: 20px;
+            margin: 25px 36%;
+            font-size: 3em;
+            font-family: arial, sans-serif;
+        }
+
+        #primeiro{
+            background-color: #943d3d;
+        }
+
+        .terceiro{
+            background-color: #0a79b9;
+        }
+
+        .destaque{
+            border-color: red;
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="primeiro">Primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro">Terceiro</div>
+
+    <script>
+       document.querySelector("")//com isso podemos selecionar qualquer elemento, se for pelo id coloque uma '#' antes, se for pela classe coloeque um '.' antes, se for pela tag apena coloque o nome da tag.
+
+       document.querySelectorAll("")//e igual ao de cima, porem seleciona tudo, se voce quiser selecionar todas as tags de um determinado no em comun, voce pode facilmente usando o 'querySelectorAll()'.
+
+       
+        
+
+
+
+
+    //TREINAMENTO:
+        const divis = document.querySelectorAll("div")
+        let arraydiv =  [...divis]
+        for(let element of arraydiv){
+            element.classList.add('destaque')
+        }
+
+        //ou
+
+        const divs = document.querySelectorAll("div")
+        Array.from(divs).forEach(element => element.classList.add('destaque'))
+
+    </script>
+</body>
+</html>

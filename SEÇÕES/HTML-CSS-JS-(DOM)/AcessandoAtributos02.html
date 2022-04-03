@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessando Atributos 02</title>
+
+    <style>
+         body{
+             background-color: #520380;
+         }
+
+         div{
+             background-color: orange;
+             margin: 3em 39%;
+             padding: 1.5em;
+             border: 4px solid white;
+             color: white;
+             font-family: Arial, Helvetica, sans-serif;
+             font-weight: bolder;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <label id="legal" for="compras">Compras</label>
+        <ul id="compras" destino="escritorio" data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo Descartivel</li>
+        </ul>
+    </div>
+
+    <script>
+        const label = document.querySelector('label')
+        const lista = document.querySelector('#compras')
+
+        //pegando os atributos
+        lista.getAttribute('id')
+        lista.getAttribute('destino')
+        label.getAttribute('id')
+
+        //alterando o atributo de data-urgencia
+        lista.setAttribute('data-urgencia', 'ola')
+        label.setAttribute('tipo', 'lista-de-compras')
+        label.setAttribute('id', 'lista')
+
+        //removendo um atributo 
+        lista.removeAttribute('data-urgencia')
+        label.removeAttribute('for')
+    </script>
+</body>
+</html>

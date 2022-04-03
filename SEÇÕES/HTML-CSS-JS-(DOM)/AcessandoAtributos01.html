@@ -33,11 +33,33 @@
         <a href="#">Cod3r</a>
     </div>
     <div>
-        <img src="./img/cod.png" alt="ola" width="100px" height="100px">
+        <img src="./img/cod.png" alt="logo-cod3r" width="100px" height="100px">
     </div>
 
+
     <script>
-        const img = document.querySelector('img');
+        //Aqui estamos selecionando o elemento que queremos pegar o atributo, e armazenando em uma constante chamada 'img'.
+        const img = document.querySelector('img')
+
+        //aqui estamos pegando os atributos da imagem usando o 'getAttribute':
+        img.getAttribute('src')
+        img.getAttribute('alt')
+        img.getAttribute('width')
+        img.getAttribute('height')
+
+        //Aqui podemos alterar ou adicionar novos atributos para nossa imagem, usando o 'setAttribute':
+        img.setAttribute('alt', 'cod3er')
+
+
+        //Aqui estamos removendo um atributo usando o 'removeAttribute'  
+        img.removeAttribute('alt')
+
+
+
+        //====================================================================
+        const a = document.querySelector('a')
+
+        a.getAttribute('href')
     </script>
 </body>
 </html>

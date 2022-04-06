@@ -9,6 +9,37 @@
     <style>
         body{
             background-color: #03385c;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            background-color: orange;
+            text-align: center;
+            color: white;
+            border: 4px solid white;
+            margin: 45px 39%;
+            padding: 15px;
+            font-size: 32px;
+        }
+        .destaque{
+            border: 4px solid rgb(255, 0, 0);
+            color: red;
+        }
+
+        button{
+            margin: 12px 39%;
+            border: none;
+            background: none;
+            background-color: #23f0b2;
+            padding: 10px;
+            color: white;
+            border-radius: 1.5em;
+            cursor: pointer;
+
+        }
+        button:hover{
+            border: 4px solid #07dd35;
+            transition: 0.6s;
         }
     </style>
 </head>
@@ -19,8 +50,36 @@
         Classes
     </div>
 
-    <script>
+    <button onclick="addStyle()">adicionar estilo</button>
+    <button onclick="removeStyle()">remover estilo</button>
 
+    <script>
+       const div = document.querySelector('div').classList
+
+       div.add('destaque')//aqui adicionando a classe destaque.
+       div.toggle('destaque')//o toggle, vai adicionar o estilo caso nao tenha, mas se ja tiver o estilo ele remove.
+       div.remove('destaque')//Aqui estamos removendo a classe destaque.
+       console.log(div.length); //vai informar no terminal quantidade de classes em formato de numero.
+
+       //para todas as classe de div faça
+        for(let classe of div){
+            console.log(classes)
+        }
+        //ou
+        div.forEach(classe => console.log(classe))
+
+
+        
+//==========================================================================
+
+       //treino
+       function addStyle(){
+         div.classList.add('destaque')
+       }
+
+       function removeStyle(){
+         div.classList.remove('destaque')
+       }
     </script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-ber">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando HTML 01</title>
+    <style>
+        body{
+            background-color: #0f7c80;
+        }
+        .destaque{
+            color: #2d0f5f;
+            font-size: 3em;
+            font-family:'Courier New', Courier, monospace;
+            background-color: #fd4800;
+            border: 4px solid white;
+            width: 50%;
+            text-align: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        const body = document.querySelector('body');
+
+        //'createElement' = serve para criar um elemento
+        let div1 = document.createElement('div');
+
+        //apos criar um elemento nos podemos personalizado e adicionar comteudos a ele.
+        div1.classList.add('destaque');
+        div1.innerHTML = 'PRIMEIRO' 
+
+        //usamos 'appendChild' para adicinar um elemento criado dentro de um outro elemento.
+        body.appendChild(div1);
+       
+
+
+        //====================================================================
+
+
+        let div2 = document.createElement('div');
+        div2.classList.add('destaque')
+        div2.setAttribute('wm-atributo', 'valor')
+        div2.innerHTML = 'Segundo'
+        
+        let p = document.createElement('p')
+        p.innerHTML = "Terceiro"
+        
+        let div3 = document.createElement('div');
+        div3.appendChild(p)
+        div3.classList.add('destaque')
+
+        body.appendChild(div2);
+        body.appendChild(div3);
+    </script>
+
+</body>
+</html>

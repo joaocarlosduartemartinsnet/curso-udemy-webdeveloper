@@ -52,14 +52,28 @@
         
         let p = document.createElement('p')
         p.innerHTML = "Terceiro"
-        
+
         let div3 = document.createElement('div');
         div3.appendChild(p)
         div3.classList.add('destaque')
 
         body.appendChild(div2);
         body.appendChild(div3);
+
+       //=====================================================================
+
+        //'createTextNode' = e usado para cirar um texto
+        const text = document.createTextNode('Antes...');
+        //'insertBefore' = vai inserir um elemento antes de outro.
+        div3.insertBefore(text, div3.childNodes[0]);
+
+
+        //'cloneNode(true / false)' = serve para clonarmos um elemento para outro.
+        const div4 = div3.cloneNode(true);
+
+        body.appendChild(div4);
     </script>
 
+    
 </body>
 </html>

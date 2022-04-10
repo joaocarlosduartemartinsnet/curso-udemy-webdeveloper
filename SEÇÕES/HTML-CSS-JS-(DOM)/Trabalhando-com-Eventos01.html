@@ -26,21 +26,33 @@
 </head>
 <body>
     <div>
-        <a href="#" onclick="navegar5seconds(event)">Google</a>
+        <!--aqui estamos chamando um evento dentro de uma tag-->
+        <a href="https://www.google.com" onclick="navegar5seconds(event)">Google</a>
     </div>
 
     <script>
+        //aqui aprendemos duas formas de usaer um evento, 1-na tag e 2-dentro do codigo.
+        
        //vamos usar o evento (Onclick='') = significa q so vai executar tal funçao apos o clik
 
 
         function navegar5seconds(e){
+
             //'preventDefault' - serve para definir que o evento pradao ocorra;
             e.preventDefault();
             console.log('saindo em 5 segundos')
-            setTimeout(() => {
 
+
+            //'setTimeout()' = e uma funcao sem retorno que podemos montar o tempo de saida de uma pag pra outra.
+            setTimeout(() => {
+               const link = e.target
+               window.location.href = link.href
             },5000)
         }
+
+        //aqui estamos colocando um evento direto no codigo.
+        const a = document.querySelector('a')
+        a.onclick = navegar5seconds
     </script>
 </body>
 </html>
